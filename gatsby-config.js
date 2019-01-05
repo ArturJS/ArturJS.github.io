@@ -5,6 +5,7 @@ module.exports = {
         author: `@ArturJS`
     },
     plugins: [
+        'gatsby-plugin-sass',
         'gatsby-plugin-no-sourcemaps',
         {
             resolve: `gatsby-source-filesystem`,
