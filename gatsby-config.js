@@ -1,35 +1,67 @@
 module.exports = {
-  siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-  },
-  plugins: [
-    'gatsby-plugin-no-sourcemaps',
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+    siteMetadata: {
+        title: `ArturJS.github.io`,
+        description: `Personal blog by ArturJS.`,
+        author: `@ArturJS`
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
-    },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
-  ],
-}
+    plugins: [
+        'gatsby-plugin-no-sourcemaps',
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/src/pages`,
+                name: 'pages'
+            }
+        },
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            maxWidth: 590
+                        }
+                    },
+                    {
+                        resolve: `gatsby-remark-responsive-iframe`,
+                        options: {
+                            wrapperStyle: `margin-bottom: 1.0725rem`
+                        }
+                    },
+                    'gatsby-remark-autolink-headers',
+                    {
+                        resolve: 'gatsby-remark-prismjs',
+                        options: {
+                            inlineCodeMarker: '÷'
+                        }
+                    },
+                    'gatsby-remark-copy-linked-files',
+                    'gatsby-remark-smartypants'
+                ]
+            }
+        },
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`,
+        // `gatsby-plugin-feed`,
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `Overreacted`,
+                short_name: `Overreacted`,
+                start_url: `/`,
+                background_color: `#ffffff`,
+                theme_color: `#ffa7c4`,
+                display: `minimal-ui`,
+                icon: `src/assets/icon.png`
+            }
+        },
+        `gatsby-plugin-react-helmet`
+        // {
+        //     resolve: 'gatsby-plugin-typography',
+        //     options: {
+        //         pathToConfigModule: 'src/utils/typography'
+        //     }
+        // }
+    ]
+};
