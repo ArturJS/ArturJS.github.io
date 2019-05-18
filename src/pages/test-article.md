@@ -5,3 +5,5 @@ spoiler: test-article spoiler.
 ---
 
 TEST
+
+<custom-tag></custom-tag>
