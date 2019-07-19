@@ -15,8 +15,6 @@ class BlogIndex extends React.Component {
         );
         const posts = get(this, 'props.data.allMarkdownRemark.edges');
 
-        console.log(this.props.data);
-
         return (
             <Layout location={this.props.location} title={siteTitle}>
                 <SEO />

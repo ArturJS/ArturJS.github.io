@@ -5,6 +5,7 @@ import get from 'lodash/get';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { formatReadingTime } from '../utils';
+import { renderAst } from '../base';
 
 class BlogPostTemplate extends React.Component {
     render() {
@@ -27,7 +28,7 @@ class BlogPostTemplate extends React.Component {
                     {post.frontmatter.date}
                     {` • ${formatReadingTime(post.timeToRead)}`}
                 </p>
-                <div dangerouslySetInnerHTML={{ __html: post.html }} />
+                {renderAst(post.htmlAst)}
                 <ul
                     style={{
                         display: 'flex',
@@ -68,7 +69,7 @@ export const pageQuery = graphql`
         }
         markdownRemark(fields: { slug: { eq: $slug } }) {
             id
-            html
+            htmlAst
             timeToRead
             frontmatter {
                 title
