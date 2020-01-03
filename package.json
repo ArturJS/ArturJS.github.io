@@ -1,9 +1,8 @@
 {
-  "private": true,
   "name": "gatsby-starter-netlify-cms",
   "description": "Example Gatsby, and Netlify CMS project",
-  "version": "1.0.0",
-  "author": "Artur Nizamutdinov",
+  "version": "1.1.3",
+  "author": "Austin Green",
   "dependencies": {
     "bulma": "^0.8.0",
     "gatsby": "^2.13.31",
@@ -40,7 +39,7 @@
   "scripts": {
     "clean": "gatsby clean",
     "start": "npm run develop",
-    "build": "npm run clean && gatsby build",
+    "build": "npm run clean && gatsby build && cp -R notes/ public/notes",
     "develop": "npm run clean && gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
     "test": "echo \"Error: no test specified\" && exit 1"

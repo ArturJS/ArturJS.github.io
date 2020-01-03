@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: ArturJS Blog Posts
+title: Great coffee with a conscience
 image: /img/home-jumbotron.jpg
-heading: ArturJS Blog Posts
-subheading: Just thoughts and ideas
+heading: Great coffee with a conscience
+subheading: Support sustainable farming while enjoying a cup
 mainpitch:
   title: Why Kaldi
   description: >
