@@ -1,73 +1,51 @@
 {
-    "name": "gatsby-starter-default",
-    "private": true,
-    "description": "A simple starter to get up and developing quickly with Gatsby",
-    "version": "0.1.0",
-    "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-    "dependencies": {
-        "gatsby": "^2.0.76",
-        "gatsby-image": "^2.0.20",
-        "gatsby-plugin-manifest": "^2.0.9",
-        "gatsby-plugin-no-sourcemaps": "^2.0.1",
-        "gatsby-plugin-offline": "^2.0.16",
-        "gatsby-plugin-react-helmet": "^3.0.2",
-        "gatsby-plugin-sass": "^2.0.7",
-        "gatsby-plugin-sharp": "^2.0.14",
-        "gatsby-remark-autolink-headers": "^2.0.12",
-        "gatsby-remark-copy-linked-files": "^2.0.8",
-        "gatsby-remark-images": "^3.0.1",
-        "gatsby-remark-prismjs": "^3.2.0",
-        "gatsby-remark-responsive-iframe": "^2.0.8",
-        "gatsby-remark-smartypants": "^2.0.7",
-        "gatsby-source-filesystem": "^2.0.12",
-        "gatsby-transformer-remark": "^2.1.19",
-        "gatsby-transformer-sharp": "^2.1.8",
-        "lodash": "^4.17.11",
-        "node-sass": "^4.11.0",
-        "prismjs": "^1.15.0",
-        "prop-types": "^15.6.2",
-        "react": "^16.6.3",
-        "react-dom": "^16.6.3",
-        "react-helmet": "^5.2.0",
-        "rehype-react": "^3.1.0"
-    },
-    "keywords": [
-        "gatsby"
-    ],
-    "license": "MIT",
-    "scripts": {
-        "build": "npx rimraf public && gatsby build",
-        "dev": "gatsby develop",
-        "start": "npm run dev",
-        "format": "prettier --write \"src/**/*.js\"",
-        "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-        "lint-staged": "npx lint-staged",
-        "deploy": "npx gh-pages -d public -b master"
-    },
-    "lint-staged": {
-        "src/**/*.{js,jsx}": [
-            "prettier --write",
-            "git add"
-        ]
-    },
-    "husky": {
-        "hooks": {
-            "post-commit": "git update-index --again",
-            "pre-commit": "npm run lint-staged"
-        }
-    },
-    "devDependencies": {
-        "gh-pages": "^2.0.1",
-        "husky": "^1.3.1",
-        "lint-staged": "^8.1.0",
-        "prettier": "^1.15.2",
-        "rimraf": "^2.6.3"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-    },
-    "bugs": {
-        "url": "https://github.com/gatsbyjs/gatsby/issues"
-    }
+  "private": true,
+  "name": "gatsby-starter-netlify-cms",
+  "description": "Example Gatsby, and Netlify CMS project",
+  "version": "1.0.0",
+  "author": "Artur Nizamutdinov",
+  "dependencies": {
+    "bulma": "^0.8.0",
+    "gatsby": "^2.13.31",
+    "gatsby-image": "^2.0.23",
+    "gatsby-plugin-netlify": "^2.0.6",
+    "gatsby-plugin-netlify-cms": "^4.1.6",
+    "gatsby-plugin-purgecss": "^4.0.0",
+    "gatsby-plugin-react-helmet": "^3.0.4",
+    "gatsby-plugin-sass": "^2.0.7",
+    "gatsby-plugin-sharp": "^2.2.9",
+    "gatsby-remark-copy-linked-files": "^2.0.7",
+    "gatsby-remark-images": "^3.1.6",
+    "gatsby-remark-relative-images": "^0.2.1",
+    "gatsby-source-filesystem": "^2.0.26",
+    "gatsby-transformer-remark": "^2.6.9",
+    "gatsby-transformer-sharp": "^2.1.9",
+    "lodash": "^4.17.15",
+    "lodash-webpack-plugin": "^0.11.4",
+    "netlify-cms-app": "^2.9.6",
+    "netlify-cms-media-library-cloudinary": "^1.3.2",
+    "netlify-cms-media-library-uploadcare": "^0.5.2",
+    "node-sass": "^4.11.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-helmet": "^5.2.0",
+    "uuid": "^3.2.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "clean": "gatsby clean",
+    "start": "npm run develop",
+    "build": "npm run clean && gatsby build",
+    "develop": "npm run clean && gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^1.15.3"
+  }
 }
