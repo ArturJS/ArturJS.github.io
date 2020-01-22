@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"componentChunkName":"component---src-templates-tags-js","path":"/tags/jamaica/","result":{"data":{"site":{"siteMetadata":{"title":"ArturJS Blog"}},"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/blog/2017-01-04-just-in-small-batch-of-jamaican-blue-mountain-in-store-next-week/"},"frontmatter":{"title":"Just in: small batch of Jamaican Blue Mountain in store next week"}}}]}},"pageContext":{"tag":"jamaica"}}}
+=======
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/jamaica/","result":{"data":{"site":{"siteMetadata":{"title":"ArturJS Space"}},"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/blog/2017-01-04-just-in-small-batch-of-jamaican-blue-mountain-in-store-next-week/"},"frontmatter":{"title":"Just in: small batch of Jamaican Blue Mountain in store next week"}}}]}},"pageContext":{"tag":"jamaica"}}}
+>>>>>>> b6d5a55f52171d84785c491607bfc7dffc2c669b

@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"data":{"site":{"siteMetadata":{"title":"ArturJS Blog","description":"This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution."}}}}
+=======
+{"data":{"site":{"siteMetadata":{"title":"ArturJS Space","description":"My personal blog"}}}}
+>>>>>>> b6d5a55f52171d84785c491607bfc7dffc2c669b

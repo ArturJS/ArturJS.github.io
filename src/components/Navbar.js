@@ -41,8 +41,12 @@ const Navbar = class extends React.Component {
       >
         <div className="container">
           <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+            <Link to="/" className="navbar-item" title="Home page" style={{
+              fontSize: '32px',
+              fontWeight: 'bold',
+              color: '#ff4400'
+            }}>
+              ArturJS
             </Link>
             {/* Hamburger menu */}
             <div
@@ -63,9 +67,9 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/about">
                 About
               </Link>
-              {/* <Link className="navbar-item" to="/products">
+              <Link className="navbar-item" to="/products">
                 Products
-              </Link> */}
+              </Link>
               <Link className="navbar-item" to="/blog">
                 Blog
               </Link>
@@ -76,7 +80,7 @@ const Navbar = class extends React.Component {
             <div className="navbar-end has-text-centered">
               <a
                 className="navbar-item"
-                href="https://github.com/ArturJS/ArturJS.github.io"
+                href="https://github.com/ArturJS"
                 target="_blank"
                 rel="noopener noreferrer"
               >
